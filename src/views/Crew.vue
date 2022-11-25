@@ -14,7 +14,7 @@ lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
 
             </h5>
 
-            <img class="xs:w-[177px]  md:absolute bottom-0 md:w-[433px] lg:w-[336px]   lg:pt-[72px] lg:translate-y-8 " :src='`src/assets/${crew[index].images.webp}`' alt="">
+            <img class="xs:w-[177px]  md:absolute bottom-0 md:w-[433px] lg:w-[336px]   lg:pt-[72px] lg:translate-y-8 " :src='`${crew[index].images.webp}`' alt="">
             <hr class="w-screen md:hidden">
 
         </div>
