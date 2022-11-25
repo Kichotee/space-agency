@@ -14,7 +14,7 @@
  
   </div>
   
-<div id="destinations-info "  class= 'flex flex-col items-center mt-6  md:mt-[53px]  w-full lg:w-[40%] lg:mt-0 '>
+<div id="destinations-info "  class= 'flex flex-col items-center mt-6  md:mt-[53px]  w-full lg:w-[40%] lg:mt-8 '>
    <ul class="font-barlow flex w-[48%] items-center justify-between text-[14px] leading-[17px]  tracking-[2.3px]  pagination
  md:text-base md:tracking-[2.7px] leading-[19px] md:w-[40%]
   lg:items-start lg:w-full lg:justify-start lg:gap-8 lg:pt-[12px] lg:text-[12px]">

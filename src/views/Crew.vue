@@ -1,9 +1,9 @@
 <template>
-<main class="max-w-[100vw]   overflow-hidden bg-[url('/assets/crew/background-crew-mobile.jpg')] 
+<main class="max-w-[100vw]   overflow-hidden bg-[url('../assets/assets/crew/background-crew-mobile.jpg')] 
 bg-center bg-no-repeat bg-local bg-cover h-screen text-white 
-md:bg-[url('/assets/crew/background-crew-tablet.jpg')] 
+md:bg-[url('../assets/assets/crew/background-crew-tablet.jpg')] 
 md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen 
-lg:bg-[url('/assets/crew/background-crew-desktop.jpg')]  ">
+lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
     <section v-for="(item, index) in crew" v-show="currentData===index" :key=index class="dataCount pt-12 flex items-center w-full xs:flex-col md:flex-col-reverse md:pt-10 lg:flex-row-reverse md:h-full lg:pt-[76px] lg:pl-[38.5px] ">
         <transition name="img-slide" appear="">
         <div id="celestial-box" class="flex items-center w-full h-[100%] relative flex-col lg:flex-col pt-8 gap-8  md:pt-[60px] lg:w-[50%]  lg:h-  lg:pt-0 ">
@@ -14,7 +14,7 @@ lg:bg-[url('/assets/crew/background-crew-desktop.jpg')]  ">
 
             </h5>
 
-            <img class="xs:w-[177px]  md:absolute bottom-0 md:w-[433px] lg:w-[336px]   lg:pt-[72px] lg:translate-y-8 " :src='`/${crew[index].images.webp}`' alt="">
+            <img class="xs:w-[177px]  md:absolute bottom-0 md:w-[433px] lg:w-[336px]   lg:pt-[72px] lg:translate-y-8 " :src='`src/assets/${crew[index].images.webp}`' alt="">
             <hr class="w-screen md:hidden">
 
         </div>
