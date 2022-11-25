@@ -9,7 +9,7 @@
 
     </h5>
      <transition name="object" appear>
-    <img class="  xs:w-[170px] md:w-[300px] lg:w-[50%]  " :src='`../src/assets/${destinations[index].images.png}`' alt="">
+    <img class="  xs:w-[170px] md:w-[300px] lg:w-[50%]  " :src='`/assets/${destinations[index].images.png}`' alt="">
      </transition>
  
   </div>
