@@ -2,11 +2,11 @@
 </script>
 
 <template>
-<main  class="max-w-[100vw]   overflow-hidden bg-[url('../assets/assets/home/background-home-mobile.jpg')] 
+<main  class="max-w-[100vw]   overflow-hidden bg-[url('/assets/home/background-home-mobile.jpg')] 
 bg-center bg-no-repeat bg-local bg-cover h-screen text-white 
-md:bg-[url('../assets/assets/home/background-home-tablet.jpg')] 
+md:bg-[url('/assets/home/background-home-tablet.jpg')] 
 md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen 
-lg:bg-[url('../assets/assets/home/background-home-desktop.jpg')]  ">
+lg:bg-[url('/assets/home/background-home-desktop.jpg')]  ">
 
     <section class='font-serif flex flex-col items-center pt-12 lg:flex-row lg:px-4 lg:justify-around lg:text-left  lg:pt-12
     xs:pt-6'>

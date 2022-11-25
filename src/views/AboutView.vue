@@ -1,10 +1,10 @@
 <template>
   
-   <main  class="max-w-[100vw]   overflow-hidden bg-[url('../assets/assets/destination/background-destination-mobile.jpg')] 
+   <main  class="max-w-[100vw]   overflow-hidden bg-[url('/assets/destination/background-destination-mobile.jpg')] 
 bg-center bg-no-repeat bg-local bg-cover h-screen text-white 
-md:bg-[url('../assets/assets/destination/background-destination-tablet.jpg')] 
+md:bg-[url('/assets/destination/background-destination-tablet.jpg')] 
 md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen 
-lg:bg-[url('../assets/assets/destination/background-destination-desktop.jpg')]  ">
+lg:bg-[url('/assets/destination/background-destination-desktop.jpg')]  ">
 
 <mooncomponent/>
 
