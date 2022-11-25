@@ -6,7 +6,7 @@ md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen
 lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
     <section v-for="(item, index) in crew" v-show="currentData===index" :key=index class="dataCount pt-12 flex items-center w-full xs:flex-col md:flex-col-reverse md:pt-10 lg:flex-row-reverse md:h-full lg:pt-[76px] lg:pl-[38.5px] ">
         <transition name="img-slide" appear="">
-        <div id="celestial-box" class="flex items-center w-full h-[100%] relative flex-col lg:flex-col pt-8 gap-8  md:pt-[60px] lg:w-[50%]  lg:h-  lg:pt-0 ">
+        <div id="celestial-box" class="flex items-center w-full h-[100%] relative flex-col lg:flex-col pt-8   md:pt-[60px] lg:w-[50%]  lg:h-  lg:pt-0 ">
             <h5 class="md:hidden font-barlow  text-base flex flex-row leading-[19px] tracking-[2.7px] gap-[18px] 
                         lg:hidden
    ">
@@ -14,12 +14,13 @@ lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
 
             </h5>
 
-            <img class="xs:w-[177px]  md:absolute bottom-0 md:w-[433px] lg:w-[336px]   lg:pt-[72px] lg:translate-y-8 " :src='`${crew[index].images.webp}`' alt="">
+            <img class="xs:w-[177px]  xs:justify-self-end mt-8
+              md:absolute bottom-0 md:w-[403px] lg:w-[326px] l   lg:pt-[72px] lg:translate-y-8 " :src='`${crew[index].images.webp}`' alt="">
             <hr class="w-screen md:hidden">
 
         </div>
         </transition>
-        <div id="destinations-info " class='flex flex-col items-center mt-6  md:h-[50%]
+        <div id="destinations-info " class='flex flex-col items-center mt-6   md:h-[50%]
           md:mt-[53px] lg:basis-[40%] w-full lg:h-[80vh] md:justify-between lg:mt-0 lg:pl-[1em]'>
             <h5 class="font-barlow xs:hidden text-base md:flex flex-row leading-[19px] 
             tracking-[2.7px] gap-[18px] lg:basis-[10%]   

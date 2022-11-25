@@ -17,6 +17,9 @@
     opacity: 1;
 
 }
+.activeDest{
+  border-bottom: 1px solid white;
+}
 .navmenu{
   backdrop-filter: blur(40px);
 }

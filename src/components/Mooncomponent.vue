@@ -9,33 +9,33 @@
 
     </h5>
      <transition name="object" appear>
-    <img class="  xs:w-[170px] md:w-[300px] lg:w-[50%]  " :src='`${destinations[index].images.png}`' alt="">
+    <img class="  xs:w-[170px] md:w-[300px] lg:w-[50%]  " :src='`${destinations[currentData].images.png}`' alt="">
      </transition>
  
   </div>
   
 <div id="destinations-info "  class= 'flex flex-col items-center mt-6  md:mt-[53px]  w-full lg:w-[40%] lg:mt-8 '>
-   <ul class="font-barlow flex w-[60%] self-  items-center justify-between text-[14px] leading-[17px] gap-4  tracking-[2.3px]  pagination
+   <ul class="font-barlow flex w-[60%] self-  items-center justify-between text-[14px] leading-[17px] gap-4  tracking-[2.3px]  
  md:text-base md:tracking-[2.7px] leading-[19px] md:w-[40%]
-  lg:items-start lg:w-full lg:justify-start lg:gap-8 lg:pt-[12px] lg:text-[12px]">
-    <li @click="index=0" class="cursor-pointer active:border-b hover:border-b"> Moon</li>
-    <li @click="index=1" class="cursor-pointer">Mars</li>
-    <li @click="index=2" class="cursor-pointer">Europa</li>
-    <li @click="index=3" class="cursor-pointer">Titan</li>
+  lg:items-start lg:w-full lg:justify-start lg:gap-8 lg:pt-[12px] lg:text-[12px]" >
+    <li @click="currentData=0" class="cursor-pointer " :class='{activeDest: currentData===0}'> Moon</li>
+    <li @click="currentData=1" class="cursor-pointer " :class='{activeDest: currentData===1}'>Mars</li>
+    <li @click="currentData=2" class="cursor-pointer" :class='{activeDest: currentData===2}'>Europa</li>
+    <li @click="currentData=3" class="cursor-pointer" :class='{activeDest: currentData===3}'>Titan</li>
     
   </ul>
    <div class="font-belle font-normal w-[327px] mt-5 text-center description md:w-[573px]  md:mt-[32px] lg:mt-[0] lg:text-left lg:w-[80%] self-center lg:self-start ">
     
     <h2 class="text-[56px] md:text-[80px] lg:text-left lg:text-[5em] lg:leading-[115px] uppercase ">
      
-      {{destinations[index].name}}
+      {{destinations[currentData].name}}
       
     </h2>
 
     <p class="font-barlow leading-[25px] text-[15px] 
     md:text-base md:leading-[28px] md:mt-2
     lg:font-[18px] ">
-      {{destinations[index].description}}
+      {{destinations[currentData].description}}
 
     </p>
   <hr class="w-full text-[#383B4B] mt-8">
@@ -50,7 +50,7 @@
        Avg Distance
     </h5>
     <h3 class="pt-[12px] text-[20px] md:leading-[32px] md:inline">
-        {{destinations[index].distance}}
+        {{destinations[currentData].distance}}
 
     </h3>
     </div>
@@ -59,7 +59,7 @@
      Est. travel time
     </h5>
     <h3 class="pt-[12px] text-[20px] md:leading-[32px] md:pt-0">
-        {{destinations[index].travel}}
+        {{destinations[currentData].travel}}
 
     </h3>
   </div>
@@ -80,8 +80,11 @@ import {ref } from 'vue';
 import { useDataStore } from "../store/index.js";
 const data = useDataStore();
 const destinations= data.destinations
-const index=ref(0)
-console.log(index);
+const currentData=ref(0);
+const goToData = (index) => {
+    currentData.value = index
+
+}
 
 </script>
 
