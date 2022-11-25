@@ -17,3 +17,19 @@
     opacity: 1;
 
 }
+.navmenu{
+  backdrop-filter: blur(40px);
+}
+
+.menu-leave-to  {
+  right: -50% ;
+  opacity: 0;
+}
+.menu-enter-from{
+  right: -50% ;
+  opacity: 0;
+}
+.menu-enter-from,
+.menu-leave-to {
+  transition:all 1s;
+}

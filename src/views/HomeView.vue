@@ -1,8 +1,15 @@
 <script setup>
+import { ref } from "vue";
+const activeMenu=ref(false)
+const toggleMenu =()=>{
+  activeMenu.value = !activeMenu.value
+ ;
+}
+ console.log(activeMenu.value)
 </script>
 
 <template>
-<main  class="max-w-[100vw]   overflow-hidden bg-[url('../assets/assets/home/background-home-mobile.jpg')] 
+<main @click='activeMenu=false'  class="max-w-[100vw]   overflow-hidden bg-[url('../assets/assets/home/background-home-mobile.jpg')] 
 bg-center bg-no-repeat bg-local bg-cover h-screen text-white 
 md:bg-[url('../assets/assets/home/background-home-tablet.jpg')] 
 md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen 
@@ -33,7 +40,7 @@ lg:bg-[url('../assets/assets/home/background-home-desktop.jpg')]  ">
         </div>
        
       </div>
-      <div class="box flex h-100% items-end justify-center">
+      <div class="box  flex h-100% items-end justify-center">
        <div id="circle-box" class="h-[150px] w-[150px]  mt-[81px] rounded-full relative bg-white
        xs:mt-[42px]
        md:w-[242px]  md:h-[242px] md:mt-44

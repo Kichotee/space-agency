@@ -1,5 +1,5 @@
 <template>
-  <section  class="pt-12 flex  items-center w-full pl-[38.5px] flex-col md:pt-10 lg:flex-row lg:h-full lg:pt-[76px] ">
+  <section  class="pt-12 flex  items-center w-full px-[19.25px] flex-col md:pt-10 lg:flex-row lg:h-full lg:pt-[76px] ">
   <div id="celestial-box" class="flex items-center w-full flex-col  pt-8 gap-12 md:pt-[60px]   lg:pt-0 ">
     <h5 class="font-barlow  text-base flex flex-row leading-[19px] tracking-[2.7px] gap-[18px] 
     md:self-start md:text-xl md:leading-24px md:tracking-[3.38px] 
@@ -15,7 +15,7 @@
   </div>
   
 <div id="destinations-info "  class= 'flex flex-col items-center mt-6  md:mt-[53px]  w-full lg:w-[40%] lg:mt-8 '>
-   <ul class="font-barlow flex w-[48%] items-center justify-between text-[14px] leading-[17px]  tracking-[2.3px]  pagination
+   <ul class="font-barlow flex w-[60%] self-  items-center justify-between text-[14px] leading-[17px] gap-4  tracking-[2.3px]  pagination
  md:text-base md:tracking-[2.7px] leading-[19px] md:w-[40%]
   lg:items-start lg:w-full lg:justify-start lg:gap-8 lg:pt-[12px] lg:text-[12px]">
     <li @click="index=0" class="cursor-pointer active:border-b hover:border-b"> Moon</li>
