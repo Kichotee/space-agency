@@ -8,7 +8,7 @@ md:bg-[url('../assets/assets/home/background-home-tablet.jpg')]
 md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen 
 lg:bg-[url('../assets/assets/home/background-home-desktop.jpg')]  ">
 
-    <section class='font-serif flex flex-col items-center pt-12 lg:flex-row lg:px-4 lg:justify-around lg:text-left  lg:pt-64
+    <section class='font-serif flex flex-col items-center pt-12 lg:flex-row lg:px-4 lg:justify-around lg:text-left  lg:pt-12
     xs:pt-6'>
       <div class="textbox flex flex-col items-center gap-6
       xs:h-[360px] xs:justify-center
@@ -21,7 +21,7 @@ lg:bg-[url('../assets/assets/home/background-home-desktop.jpg')]  ">
         lg:mx-0 lg:text-left">So you want to travel to</h5>
         <h2 class="text-[80px] font-belle leading-[100px] tracking-[2.7px] capitalize text-white
         md:text-[150px] md:leading-[150px]
-        
+        lg:text-[em]  md:leading-[150px]
         lg:text-left">SPACE</h2>
         <div class="body-text h-[125px] ">
         <p class='text-center font-belle text-babyBlue text-base leading-[25px]
@@ -37,7 +37,7 @@ lg:bg-[url('../assets/assets/home/background-home-desktop.jpg')]  ">
        <div id="circle-box" class="h-[150px] w-[150px]  mt-[81px] rounded-full relative bg-white
        xs:mt-[42px]
        md:w-[242px]  md:h-[242px] md:mt-44
-       lg:w-[272px]  lg:h-[272px] lg:translate-y-[-10%]">
+       lg:w-[12em]  lg:h-[12em] lg:translate-y-[-10%]">
         <span class="absolute top-[50%] left-[50%] text-spaceBlue translate-x-[-50%] translate-y-[-50%]">
           <p>EXPLORE</p>
           </span>
