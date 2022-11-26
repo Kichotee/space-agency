@@ -31,17 +31,17 @@ const closeMenu=()=> {
           <RouterLink class=" active:border-b" to="/"><span class="hidden lg:inline font-bold text-white">00</span> Home</RouterLink>
         <RouterLink  class=" active:border-b" to="/about"><span class="hidden lg:inline font-bold text-white pr-[14px] ">01</span>Destination</RouterLink>
          <RouterLink  class=" active:border-b" to="/Crew"><span class="hidden lg:inline font-bold text-white pr-[14px]">02</span>Crew</RouterLink>
-          <RouterLink  class=" active:border-b" to="/about"><span class="hidden lg:inline font-bold text-white pr-[14px]">03</span>Technology</RouterLink>
+          <RouterLink  class=" active:border-b" to="/technology"><span class="hidden lg:inline font-bold text-white pr-[14px]">03</span>Technology</RouterLink>
         </div>
 
         <transition name='menu' appear=''>
-        <div v-if="activeMenu"   class="navmenu xs:block md:hidden text-sm leading-[17px] tracking-[2.4px] absolute right-0 pt-8 w-[60%] h-[100vh] items-center 
-        justify-start  px-4 h-50 xs:flex flex-col gap-8 z-[8] bg-whiteFade backdrop-blur-8xl font-barlow ;
+        <div v-if="activeMenu"   class="navmenu md:hidden text-sm text-left leading-[17px] tracking-[2.4px] absolute right-0 pt-8 w-[60%] h-[100vh] items-start 
+        justify-start  px-4 h-50 xs:flex flex-col gap-12 z-[8] bg-whiteFade backdrop-blur-8xl font-barlow ;
 ]">       <img @click="toggleMenu()" class="self-end w-6" src="./assets/assets/shared/icon-close.svg" alt="">
-          <RouterLink  @click="toggleMenu()" class=" active:border-b" to="/"><span class="hidden lg:inline font-bold text-white">00</span> Home</RouterLink>
-        <RouterLink @click="toggleMenu()"  class=" active:border-b" to="/about"><span class="hidden lg:inline font-bold text-white pr-[14px] ">01</span>Destination</RouterLink>
-         <RouterLink @click="toggleMenu()" class=" active:border-b" to="/Crew"><span class="hidden lg:inline font-bold text-white pr-[14px]">02</span>Crew</RouterLink>
-          <RouterLink @click="toggleMenu()" class=" active:border-b" to="/about"><span class="hidden lg:inline font-bold text-white pr-[14px]">03</span>Technology</RouterLink>
+          <RouterLink  @click="toggleMenu()" class=" active:border-b" to="/"><span class="  mr-2 lg:inline font-bold text-white">00</span> Home</RouterLink>
+        <RouterLink @click="toggleMenu()"  class=" active:border-b" to="/about"><span class=" mr-2 lg:inline font-bold text-white pr-[14px] ">01</span>Destination</RouterLink>
+         <RouterLink @click="toggleMenu()" class=" active:border-b" to="/Crew"><span class=" mr-2 lg:inline font-bold text-white pr-[14px]">02</span>Crew</RouterLink>
+          <RouterLink @click="toggleMenu()" class=" active:border-b" to="/technology"><span class=" mr-2 lg:inline font-bold text-white pr-[14px]">03</span>Technology</RouterLink>
         </div>
         </transition>
         <img @click="toggleMenu()" class="md:hidden mt-6   self-center" src="./assets/assets/shared/icon-hamburger.svg" alt="">

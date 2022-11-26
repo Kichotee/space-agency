@@ -15,10 +15,10 @@ md:bg-[url('../assets/assets/home/background-home-tablet.jpg')]
 md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen 
 lg:bg-[url('../assets/assets/home/background-home-desktop.jpg')]  ">
 
-    <section class='font-serif flex flex-col items-center pt-12 lg:flex-row lg:px-4 lg:justify-around lg:text-left  lg:pt-12
+    <section class='font-serif flex flex-col justify-center items-center pt-8 lg:flex-row lg:px-4 h-screen lg:justify-around lg:text-left  lg:pt-12
     xs:pt-6'>
       <div class="textbox flex flex-col items-center gap-6
-      xs:h-[360px] xs:justify-center
+      xs:h-[40vh] xs:justify-center 
       md:max-w-[70%] 
       md:mt-28 justify-between h-[382px] 
       lg:max-w-[450px] lg:items-start ">

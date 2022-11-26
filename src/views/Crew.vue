@@ -7,7 +7,7 @@ lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
     <section v-for="(item, index) in crew" v-show="currentData===index" :key=index class="dataCount pt-12 flex justify-between items-center w-full h-[100vh] xs:flex-col md:flex-col-reverse md:pt-10 lg:flex-row-reverse md:h-full lg:pt-[76px] lg:pl-[38.5px] ">
         <transition name="img-slide" appear="">
         <div id="celestial-box" class="flex items-center w-full h-full relative flex-col lg:flex-col pt-8   md:pt-[60px] lg:w-[50%]  lg:h-  lg:pt-0 ">
-            <h5 class="md:hidden font-barlow  text-base flex flex-row leading-[19px] tracking-[2.7px] gap-[18px] 
+            <h5 class="md:hidden font-barlow uppercase  text-base flex flex-row leading-[19px] tracking-[2.7px] gap-[18px] 
                         lg:hidden
    ">
                 <p class="text-white opacity-[0.25] mix-blend-normal">02</p> Meet your crew
