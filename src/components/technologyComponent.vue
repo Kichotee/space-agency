@@ -1,7 +1,7 @@
 <template>
-<section v-for="(item, index) in technology" v-show="currentData==index" :key='index' class="dataCount pt-8 h-full object:cover  lg:flex lg:flex-row lg:items-center gap-[80px]">
+<section v-for="(item, index) in technology" v-show="currentData==index" :key='index' class="dataCount pt-12 h-full object:cover md:pt-16  lg:flex lg:flex-row lg:items-center gap-[80px]">
     <div class="box-1 flex flex-col items-center h-[40vh] justify-center gap-[8%] lg:order-2 ">
-        <div class="header-text">
+        <div class="header-text md:self-start md:pl-6">
             <h5 class=" font-barlow uppercase text-base flex flex-row leading-[19px] tracking-[2.7px] gap-[18px] 
                         lg:hidden
    ">
@@ -21,7 +21,7 @@
       <div class="pagination w-full  flex justify-center h-[5vh]  gap-4 lg:basis-[10%] 
            lg:flex-col lg:pl-12  lg:w-1/6 lg:h-[40vh] lg:order-first">
                 <span @click="goToData(index)" v-for="(item, index) in getDataCount" :key="index" 
-                class="w-[40px] h-[40px] rounded-full bg-transparent border opacity-[0.25] flex items-center justify-center  text-base  cursor-pointer " 
+                class="w-[40px] h-[40px] rounded-full bg-transparent border opacity-[0.25] flex items-center justify-center  text-base  cursor-pointer hover:opacity-[0.5] " 
                 :class="{active: index === currentData}">
                 {{ index +1 }}
                 </span>

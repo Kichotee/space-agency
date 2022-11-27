@@ -17,7 +17,7 @@ lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
         
             
             <img  v-for="(item, index) in crew"  :key='index' v-show="currentData==index"  class="xs:max-w-[177px] xs:justify-self- mt-8
-              md:absolute bottom-0 right-[50%] translate-x-[50%] md:max-w-[306px] lg:max-w-[326px]   lg:pt-[72px] lg:translate-y-8 " :src='`${crew[index].images.webp}`' alt="">
+              md:absolute bottom-0 lg:right-[50%] lg:translate-x-[50%] md:max-w-[306px] lg:max-w-[326px]   lg:pt-[72px] lg:translate-y-8 " :src='`${crew[index].images.webp}`' alt="">
            
         </transition-group>
          <hr class=" w-screen md:hidden">
@@ -64,7 +64,7 @@ lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
 
             </div>
             <div class="pagination w-[132px] lg:self-start lg:basis-[10%] lg:order-3">
-                <span @click="goToData(index)" v-for="(item, index) in getDataCount" :key="index" class="w-[15px] h-[15px] rounded-full bg-white opacity-[0.17] cursor-pointer " :class="{active: index === currentData}">
+                <span @click="goToData(index)" v-for="(item, index) in getDataCount" :key="index" class="w-[15px] h-[15px] rounded-full bg-white opacity-[0.17] cursor-pointer hover:opacity-[0.5] " :class="{active: index === currentData}">
 
                 </span>
             </div>

@@ -1,4 +1,5 @@
 <script setup>
+import {RouterView, RouterLink} from 'vue-router';
 import { ref } from "vue";
 const activeMenu=ref(false)
 const toggleMenu =()=>{
@@ -40,8 +41,9 @@ lg:bg-[url('../assets/assets/home/background-home-desktop.jpg')]  ">
         </div>
        
       </div>
-      <div class="box  flex h-100% items-end justify-center">
-       <div id="circle-box" class="h-[150px] w-[150px]  mt-[81px] rounded-full relative bg-white
+      <div class="box  flex h-100%  items-end justify-center">
+        <RouterLink to="/destination">
+       <div id="circle-box" class="h-[150px] w-[150px] w-full  mt-[81px] relative rounded-full relative bg-white
        xs:mt-[42px]
        md:w-[242px]  md:h-[242px] md:mt-44
        lg:w-[12em]  lg:h-[12em] lg:translate-y-[-10%]">
@@ -49,6 +51,7 @@ lg:bg-[url('../assets/assets/home/background-home-desktop.jpg')]  ">
           <p>EXPLORE</p>
           </span>
           </div>
+          </RouterLink>
 
         </div>
     </section>
@@ -56,5 +59,25 @@ lg:bg-[url('../assets/assets/home/background-home-desktop.jpg')]  ">
   
 </template>
 <style scoped>
+#circle-box::after{
+  content: ' ';
+  
+  opacity: 0;
+  height: 16rem;
+  width: 16rem;
+  background: #fff;
+  
+  position: absolute;
+  border-radius: 50%;
+  top: -18%;
+  left: -16%;
+  /* translate: -50% -50%; */
+ 
+  
+}
+#circle-box:hover::after{
+  opacity: 0.1;
+   transition: all .5s;
+}
 
 </style>

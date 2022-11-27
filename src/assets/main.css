@@ -17,11 +17,22 @@
     opacity: 1;
 
 }
+.links::after{
+  content: '';
+  width: 1px;
+  height:4rem;
+  
+  background: #fff;
+  justify-self: end;
+  rotate: 90deg;
+
+}
 .activeDest{
   border-bottom: 1px solid white;
 }
 .navmenu{
   backdrop-filter: blur(40px);
+  /* right: 50%; */
 }
 
 .menu-leave-to  {
@@ -32,7 +43,10 @@
   right: -50% ;
   opacity: 0;
 }
-.menu-enter-from,
+.menu-enter-from{
+  transition: all 3s;
+}
 .menu-leave-to {
   transition:all 1s;
 }
+
