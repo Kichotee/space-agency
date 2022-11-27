@@ -8,9 +8,9 @@
      <p class="text-white opacity-[0.25] mix-blend-normal">01</p> Pick your Location
 
     </h5>
-     <transition name="object" appear>
-    <img class="  xs:w-[170px] md:w-[300px] lg:w-[50%]  " :src='`${destinations[currentData].images.webp}`' alt="">
-     </transition>
+     <transition-group name="object" appear>
+    <img  v-for="(item, index) in destinations"  v-show="currentData==index"  :key='index' class="  xs:w-[170px] md:w-[300px] lg:w-[50%]  " :src='`${destinations[currentData].images.webp}`' alt="">
+     </transition-group>
  
   </div>
   
@@ -24,20 +24,21 @@
     <li @click="currentData=3" class="cursor-pointer" :class='{activeDest: currentData===3}'>Titan</li>
     
   </ul>
-   <div class="font-belle font-normal w-[327px] mt-5 text-center description md:w-[573px]  md:mt-[32px] lg:mt-[0] lg:text-left lg:w-[80%] self-center lg:self-start ">
+   <div class="font-belle font-normal w-[327px] overflow-hidden mt-5 text-center description md:w-[573px]  md:mt-[32px] lg:mt-[0] lg:text-left lg:w-[80%] self-center lg:self-start ">
     
-    <h2 class="text-[56px] md:text-[80px] lg:text-left lg:text-[5em] lg:leading-[115px] uppercase ">
+    <h2  class="text-[56px] md:text-[80px] lg:text-left lg:text-[5em] lg:leading-[115px] uppercase ">
      
       {{destinations[currentData].name}}
       
     </h2>
-
-    <p class="font-barlow leading-[25px] text-[15px] 
+  <transition-group name="textAnimate" appear>
+    <p  v-for="(item, index) in destinations"  v-show="currentData==index"  :key='index' class="font-barlow leading-[25px] text-[15px] 
     md:text-base md:leading-[28px] md:mt-2
     lg:font-[18px] ">
       {{destinations[currentData].description}}
 
     </p>
+     </transition-group>
   <hr class="w-full text-[#383B4B] mt-8">
 
   </div>
@@ -91,11 +92,19 @@ const goToData = (index) => {
 <style>
 .object-enter-from,
 .object-leave-to{
-  opacity: 0;
-  translate:-50% 0;
+  
+  translate:-200% 0;
+  /* scale: 0.1; */
+  transform-origin: right center;
 }
 .object-enter-active{
-  transition: 1s;
+  transition: 2s;
+}
+.textAnimate-enter-from{
+  translate: 100%;
+}
+.textAnimate-enter-active{
+  transition: all 2s;
 }
 
 </style>
