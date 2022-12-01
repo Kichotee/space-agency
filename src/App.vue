@@ -24,7 +24,7 @@ const closeMenu = () => {
     <nav class="flex absolute  justify-between px-6 font-belle text-lg   w-screen lg:px-12
         ">
         <img src="./assets/assets/shared/logo.svg" class="mt-6 items-center w-8 h-8" alt="">
-        <span class=" hidden lg:block h-1 color-whiteFade w-[40%] absolute bottom-10% left-8"></span>
+        <span class="  hidden lg:block h-1 color-whiteFade w-[40%] absolute bottom-10% left-8"></span>
         <div class=" hidden text-sm leading-[17px] tracking-[2.4px] absolute top-0 right-0 w-[60%] h-[64px] items-center 
         justify-start pl-6 lg:pl-[123px] h-50 md:flex gap-8  md:bg-whiteFade backdrop-blur-4xl font-barlow ;
 ]">

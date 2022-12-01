@@ -10,7 +10,7 @@ const toggleMenu =()=>{
 </script>
 
 <template>
-<main @click='activeMenu=false'  class="max-w-[100vw] main  overflow-hidden bg-[url('../assets/assets/home/background-home-mobile.jpg')] 
+<main @click='activeMenu=false' landscape:overflow-scroll   class="max-w-[100vw] main  overflow-hidden bg-[url('../assets/assets/home/background-home-mobile.jpg')] 
 bg-center bg-no-repeat bg-local bg-cover h-screen text-white 
 md:bg-[url('../assets/assets/home/background-home-tablet.jpg')] 
 md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen 

@@ -1,6 +1,6 @@
 <template>
   
-   <main  class="max-w-[100vw] main  h-screen overflow-scroll  md:overflow-hidden bg-[url('../assets/assets/destination/background-destination-mobile.jpg')] 
+   <main  class="max-w-[100vw] landscape:overflow-scroll   h-screen overflow-scroll  md:overflow-hidden bg-[url('../assets/assets/destination/background-destination-mobile.jpg')] 
 bg-center bg-no-repeat bg-local bg-cover text-white 
 md:bg-[url('../assets/assets/destination/background-destination-tablet.jpg')] 
 md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen 

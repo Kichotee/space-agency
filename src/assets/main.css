@@ -49,9 +49,5 @@
 .menu-leave-to {
   transition:all 1s;
 }
-@media (orientation:landscape)  {
-  .main{
-    overflow: scroll;
-  }
-}
+
 
