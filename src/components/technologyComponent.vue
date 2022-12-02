@@ -11,8 +11,8 @@
         </div>
         <transition-group name="img-transition" appear="" tag="div" >
         
-            <img class="lg:hidden"  v-for="(item, index) in technology"  :key='index' v-show="currentData==index" :src="`${technology[currentData].images.landscape}`" alt="">
-            <img class=" hidden lg:block"  v-for="(item, index) in technology"  :key='index' v-show="currentData==index" :src="`${technology[currentData].images.portrait}`" alt="">
+            <img class="lg:hidden landscape:hidden"  v-for="(item, index) in technology"  :key='index' v-show="currentData==index" :src="`${technology[currentData].images.landscape}`" alt="">
+            <img class=" hidden lg:block landscape:block"  v-for="(item, index) in technology"  :key='index' v-show="currentData==index" :src="`${technology[currentData].images.portrait}`" alt="">
             
         
         </transition-group>
