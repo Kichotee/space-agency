@@ -1,5 +1,5 @@
 <template>
-<main class="max-w-[100vw] landscape:overflow-scroll   h-screen overflow-hidden bg-[url('../assets/assets/crew/background-crew-mobile.jpg')] 
+<main class="max-w-[100vw] xs:landscape:overflow-scroll   h-screen overflow-hidden bg-[url('../assets/assets/crew/background-crew-mobile.jpg')] 
 bg-center bg-no-repeat bg-local bg-cover h-screen text-white 
 md:bg-[url('../assets/assets/crew/background-crew-tablet.jpg')] 
 
