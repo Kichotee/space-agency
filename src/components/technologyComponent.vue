@@ -1,5 +1,5 @@
 <template>
-<section v-for="(item, index) in technology" v-show="currentData==index" :key='index' class="dataCount pt-12 h-full object:cover md:pt-16  lg:flex lg:flex-row lg:items-center gap-[80px]">
+<section v-for="(item, index) in technology" v-show="currentData==index" :key='index' class="dataCount pt-12 h-max object:cover md:pt-16  lg:flex lg:flex-row lg:items-center gap-[80px]">
     <div class="box-1 flex flex-col items-center h-[40vh] justify-center gap-[8%] lg:order-2 ">
         <div class="header-text md:self-start md:pl-6">
             <h5 class=" font-barlow uppercase text-base flex flex-row leading-[19px] tracking-[2.7px] gap-[18px] 
