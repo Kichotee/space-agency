@@ -4,7 +4,7 @@ bg-center bg-no-repeat bg-local bg-cover h-screen text-white
 md:bg-[url('../assets/assets/crew/background-crew-tablet.jpg')] 
 md:bg-center md:bg-no-repeat md:bg-local md:bg-cover md:h-screen 
 lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
-    <section v-for="(item, index) in crew" v-show="currentData===index" :key=index class="dataCount pt-12 flex justify-between items-center w-full max-h-screen h-screen xs:flex-col md:flex-col-reverse md:pt-10 lg:flex-row-reverse md:h-full lg:pt-[76px] lg:pl-[38.5px] ">
+    <section v-for="(item, index) in crew" v-show="currentData===index" :key=index class="landscape:h-auto landscape:max-h-auto dataCount pt-12 flex justify-between items-center w-full max-h-screen h-screen xs:flex-col md:flex-col-reverse md:pt-10 lg:flex-row-reverse md:h-full lg:pt-[76px] lg:pl-[38.5px] ">
        
         <div id="celestial-box" class="flex items-center w-full h-[40%] relative flex-col lg:flex-col pt-8   md:pt-[60px] lg:w-[50%]  lg:h-full  lg:pt-0 ">
             <h5 class="md:hidden font-barlow uppercase  text-base flex flex-row leading-[19px] tracking-[2.7px] gap-[18px] 
