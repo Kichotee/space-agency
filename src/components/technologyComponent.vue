@@ -1,9 +1,9 @@
 <template>
-<section v-for="(item, index) in technology" v-show="currentData==index" :key='index' class="dataCount pt-12 h-max object:cover md:pt-16  lg:flex lg:flex-row lg:items-center gap-[80px]">
-    <div class="box-1 flex flex-col items-center h-[40vh] justify-center gap-[8%] lg:order-2 ">
+<section v-for="(item, index) in technology" v-show="currentData==index" :key='index' class="dataCount pt-12 h-full object:cover md:pt-16 xs:landscape:flex xs:landscape:flex-row xs:landscape:items-center  lg:flex lg:flex-row lg:items-center gap-[80px]">
+    <div class="box-1 flex flex-col items-center h-[40vh] justify-center gap-[8%] lg:order-2 xs:landscape:order-2 xs:landscape:gap-0 ">
         <div class="header-text md:self-start md:pl-6">
             <h5 class=" font-barlow uppercase text-base flex flex-row leading-[19px] tracking-[2.7px] gap-[18px] 
-                        lg:hidden
+                        lg:hidden landscape:hidden
    ">
                 <p class="text-white opacity-[0.25] mix-blend-normal ">03</p>Space launch 001
 
@@ -11,15 +11,15 @@
         </div>
         <transition-group name="img-transition" appear="" tag="div" >
         
-            <img class="lg:hidden landscape:hidden"  v-for="(item, index) in technology"  :key='index' v-show="currentData==index" :src="`${technology[currentData].images.landscape}`" alt="">
-            <img class=" hidden lg:block landscape:block"  v-for="(item, index) in technology"  :key='index' v-show="currentData==index" :src="`${technology[currentData].images.portrait}`" alt="">
+            <img class="lg:hidden xs:landscape:hidden"  v-for="(item, index) in technology"  :key='index' v-show="currentData==index" :src="`${technology[currentData].images.landscape}`" alt="">
+            <img class=" hidden lg:block  xs:landscape:block xs:landscape:w-[600px] "  v-for="(item, index) in technology"  :key='index' v-show="currentData==index" :src="`${technology[currentData].images.portrait}`" alt="">
             
         
         </transition-group>
 
     </div>
       <div class="pagination w-full  flex justify-center h-[5vh]  gap-4 lg:basis-[10%] 
-           lg:flex-col lg:pl-12  lg:w-1/6 lg:h-[40vh] lg:order-first">
+           lg:flex-col lg:pl-12  lg:w-1/6 lg:h-[40vh] lg:order-first xs:landscape:order-first xs:landscape:flex-col xs:landscape:self-center xs:landscape:pl-8  xs:landscape:h-full xs:landscape:w-1/6">
                 <span @click="goToData(index)" v-for="(item, index) in getDataCount" :key="index" 
                 class="w-[40px] h-[40px] rounded-full bg-transparent border opacity-[0.25] flex items-center justify-center  text-base  cursor-pointer hover:opacity-[0.5] " 
                 :class="{active: index === currentData}">
@@ -28,7 +28,8 @@
     </div>
   
 
-    <div class="box-2 font-belle flex flex-col h-[40vh] justify-start mt-8 text-center gap-4 w-screen px-6 lg:w-[50%] lg:text-left lg:justify-center ">
+    <div class="box-2 font-belle flex flex-col h-[40vh] justify-start mt-8 text-center gap-4 w-screen px-6 lg:w-[50%] lg:text-left lg:justify-center 
+    xs:landscape:justify-center  xs:landscape:h-full xs:landscape:text-left ">
          
         <div class=" header-text">
          <p class="font-barlow text-[14px] leading-[16.8px] tracking-[2.37px] uppercase  ">The terminology</p>
