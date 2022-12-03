@@ -3,7 +3,7 @@
     <div class="box-1 flex flex-col items-center h-[40vh] justify-center gap-[8%] lg:order-2 xs:landscape:order-2 xs:landscape:gap-0 ">
         <div class="header-text md:self-start md:pl-6">
             <h5 class=" font-barlow uppercase text-base flex flex-row leading-[19px] tracking-[2.7px] gap-[18px] 
-                        lg:hidden landscape:hidden
+                        lg:hidden xs:landscape:hidden
    ">
                 <p class="text-white opacity-[0.25] mix-blend-normal ">03</p>Space launch 001
 

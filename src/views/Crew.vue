@@ -1,5 +1,5 @@
 <template>
-<main class="max-w-[100vw] xs:landscape:overflow-scroll   h-screen overflow-hidden bg-[url('../assets/assets/crew/background-crew-mobile.jpg')] 
+<main class="max-w-[100vw] xs:landscape:overflow-scroll lg:landscape:overflow-hidden  h-screen overflow-hidden bg-[url('../assets/assets/crew/background-crew-mobile.jpg')] 
 bg-center bg-no-repeat bg-local bg-cover h-screen text-white 
 md:bg-[url('../assets/assets/crew/background-crew-tablet.jpg')] 
 
@@ -18,7 +18,7 @@ lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
         
             
             <img  v-for="(item, index) in crew"  :key='index' v-show="currentData==index"  class="xs:max-w-[177px] xs:justify-self- mt-8
-              md:absolute md:right-[50%] bottom-0 lg:right-[50%] landscape:right-[20%]  md:translate-x-[50%] md:max-w-[306px] landscape:max-w-[25%]  lg:max-w-[326px]   lg:pt-[72px] lg:translate-y-8 " :src='`${crew[index].images.webp}`' alt="">
+              md:absolute md:right-[50%] bottom-0  xs:landscape:right-[20%] lg:landscape:right-[50%]  md:translate-x-[50%] md:max-w-[306px] landscape:max-w-[25%]  landscape:lg:max-w-[326px]   lg:pt-[72px] lg:translate-y-8 " :src='`${crew[index].images.webp}`' alt="">
            
         </transition-group>
          <hr class=" w-screen md:hidden">
@@ -27,8 +27,8 @@ lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
 
         </div>
        
-        <div id="destinations-info " class='flex flex-col items-center basis-[40%] mt h-[50%] h-[100%]  md:h-[50%]
-          md:mt-[53px] lg:basis-[40%] landscape:text-left landscape:items-start  w-full lg:h-[80vh] md:justify-between lg:mt-0 lg:pl-[3em]'>
+        <div id="destinations-info " class=' flex flex-col items-center basis-[40%] mt h-[50%] h-[100%]  md:h-[50%]
+          md:mt-[53px] lg:basis-[40%] landscape:text-left landscape:items-start  w-full lg:h-[80vh] md:justify-between lg:mt-0 lg:pl-[3em] landscape:h-full'>
             <h5 class="font-barlow xs:hidden text-base md:flex flex-row leading-[19px] pl-8
             tracking-[2.7px] gap-[18px] lg:basis-[10%]   
                 md:self-start md:text-xl md:leading-24px md:tracking-[3.38px] 
@@ -37,7 +37,7 @@ lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
                 <p class="text-white opacity-[0.25] mix-blend-normal">02</p> Meet your Crew
 
             </h5>
-            <div id="celestial-details" class="font-belle h-[32%] mt-8 w-[327px] xs:order-last md:order-1  text-center flex flex-col md:items-center md:w-full
+            <div id="celestial-details" class=" font-belle h-[32%] mt-8 w-[327px] xs:order-last md:order-1  text-center flex flex-col md:items-center md:w-full
                     md:mt-[29px] md:flex md:items-center md:justify-center md:w-[573px] md:gap-[11px] landscape:items-start landscape:pl-8 landscape:text-left
 
                    lg:w-[] lg:items-start lg:text-left lg:justify-center lg:flex-col lg:h-50% lg:mt-0 lg:gap-0 lg:basis-[80%]">
@@ -64,7 +64,7 @@ lg:bg-[url('../assets/assets/crew/background-crew-desktop.jpg')]  ">
                 </div>
 
             </div>
-            <div class="pagination w-[132px] lg:self-start lg:basis-[10%] lg:order-3 xs:landscape:pl-8">
+            <div class="pagination w-[132px] lg:self-start lg:basis-[10%] lg:order-3 xs:landscape:pl-8 landscape:order-last">
                 <span @click="goToData(index)" v-for="(item, index) in getDataCount" :key="index" class="w-[15px] h-[15px] rounded-full bg-white opacity-[0.17] cursor-pointer hover:opacity-[0.5] " :class="{active: index === currentData}">
 
                 </span>
